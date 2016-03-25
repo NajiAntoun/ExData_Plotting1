@@ -21,12 +21,13 @@ with(consumption, plot(date_time, global_active_power, ylab="Global Active Power
 ## plotting second graph
 with(consumption, plot(date_time, voltage, ylab="Voltage", xlab="datetime", type="l", col="black"))
 
-## plotting first graph
+## plotting third graph
 with(consumption,  plot(date_time, sub_metering_1, ylab="Energy sub metering", xlab="", type="l", col="black"))
 with(consumption, lines(date_time, sub_metering_2, col="red"))
 with(consumption, lines(date_time, sub_metering_3, col="blue"))
+legend("topright", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col = c("black","red","blue"), lty = "solid")
 
-## plotting first graph
+## plotting fourth graph
 with(consumption,  plot(date_time, global_reactive_power, ylab="Global Reactive Power", xlab="datetime", type="l"))
 
 ## closing the file
