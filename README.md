@@ -121,7 +121,13 @@ make sure to have all R scripts :
 * plot3.R
 * plot4.R
 
-run plot1.R to plot4.R scripts to generate the png files containing the graphs
-each of those scripts will call the prepare_data.R which will download the source data file if needed and load the needed date into the consumption data.table. 
+run plot1.R to plot4.R scripts to generate the png files containing the graphs.
+
+each of those scripts will: 
+
+1. call the prepare_data.R which will download the source data file if needed and load the needed date into the consumption data.table. 
+2. use the consumption data.table to create the png file containing the appropriate graph.
+
+
 
 the png files will be created in R working directory
