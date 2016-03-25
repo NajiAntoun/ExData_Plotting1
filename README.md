@@ -112,3 +112,16 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+# Instructions
+
+make sure to have all R scripts : 
+* prepare_data.R
+* plot1.R
+* plot2.R
+* plot3.R
+* plot4.R
+
+run plot1.R to plot4.R scripts to generate the png files containing the graphs
+each of those scripts will call the prepare_data.R which will download the source data file if needed and load the needed date into the consumption data.table. 
+
+the png files will be created in R working directory
